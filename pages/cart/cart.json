@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "choose-adress":"../../components/chooseAdress/chooseAdress"
+  },
+  "navigationBarTitleText": "MINI购物车"
+}

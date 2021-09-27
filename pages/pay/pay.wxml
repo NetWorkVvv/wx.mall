@@ -1,0 +1,62 @@
+<!-- 收货地址 存在和不存在 按钮显示与否 -->
+<view class="container_address">
+  <!-- 不存在 按钮显示 数组/对象空的都是true 而字符串空为false -->
+  <view class="address_btn" wx:if="{{!addressInfo.consignee}}">
+    <navigator url="../addressList/addressList">选择收获地址</navigator>
+  </view>
+  <!-- 存在 显示收货地址-->
+  <view wx:else class="user_info_row">
+    <view class="user_info">
+      <view class="user_detailInfo">
+        <text>{{addressInfo.consignee}}</text>
+        <text>{{addressInfo.mobile}}</text>
+      </view>
+      <view class="text">{{addressInfo.address}}</view>
+      <view class="text">{{addressInfo.transportDay}}</view>
+    </view>
+    <view class="right">
+      <navigator class="tools" url="../addressList/addressList">
+        <image src="https://pic.imgdb.cn/item/614701f42ab3f51d91ccc553.png"></image>
+      </navigator>
+    </view>
+  </view>
+</view>
+<!-- 购物车内容 -->
+<view class="cart_container">
+  <view class="cart_title">购物车</view>
+  <view class="cart_main">
+    <view class="cart_item" wx:for="{{cartList}}" wx:key="goods_id">
+      <!-- 商品图片 -->
+      <view class="cart_img_wrap">
+        <view>
+          <image src="{{item.goods_small_logo}}" mode="widthFix"></image>
+        </view>
+      </view>
+      <!-- 商品信息 -->
+      <view class="cart_info_wrap">
+        <view class="goods_name">{{item.goods_name}}</view>
+        <view class="goods_price_wrap">
+          <view class="goods_price">￥{{item.goods_price}}</view>
+          <view class="cart_num_tool">
+            <view class="goods_num">X {{item.num}}</view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>
+<!-- 底部工具栏 -->
+<view class="footer_tool">
+  <!-- 总价格 -->
+  <view class="total_price_wrap">
+    <view class="total_price">
+      合计:<text class="total_price_text">￥{{allTotalPrice}}</text>
+    </view>
+    <view class="yunfei">包含运费</view>
+  </view>
+  <!-- 结算 -->
+  <view class="order_pay_wrap" bindtap="handlePayment">
+    支付({{allNum}})
+  </view>
+</view>

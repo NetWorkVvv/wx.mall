@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/goods_list/goods_list",
+    "pages/goods_detail/goods_detail",
+    "pages/cart/cart",
+    "pages/collect/collect",
+    "pages/order/order",
+    "pages/search/search",
+    "pages/user/user",
+    "pages/feedback/feedback",
+    "pages/auth/auth",
+    "pages/pay/pay",
+    "pages/addressList/addressList",
+    "pages/address/address"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#E43130",
+    "navigationBarTitleText": "小新MINI",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "./images/icons/homes.png",
+        "selectedIconPath": "./images/icons/homes-xz.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/category/category",
+        "iconPath": "./images/icons/category.png",
+        "selectedIconPath": "./images/icons/category-xz.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/cart/cart",
+        "iconPath": "./images/icons/car.png",
+        "selectedIconPath": "./images/icons/car-xz.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "./images/icons/mine.png",
+        "selectedIconPath": "./images/icons/mine-xz.png"
+      }
+    ],
+    "color": "#000000",
+    "selectedColor": "#FF0000"
+  },
+  "sitemapLocation": "sitemap.json"
+}

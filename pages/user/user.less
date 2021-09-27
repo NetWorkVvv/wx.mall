@@ -1,0 +1,162 @@
+.user_info_wrap {
+  height: 45vh;
+  overflow: hidden;
+  background-color: var(--themeColor);
+  position: relative;
+
+  .user_img_wrap {
+    .user_bg {
+      height: 50vh;
+      width: 100%;
+      // cs3 滤镜
+      filter: blur(15rpx);
+    }
+
+    .user_info {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%);
+
+      .user_icon {
+        width: 140rpx;
+        height: 140rpx;
+        border-radius: 50%;
+      }
+
+      .user_name {
+        color: #fff;
+        margin-top: 30rpx;
+        font-size: 40rpx;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .user_not {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+
+    navigator {
+      padding: 45rpx;
+      border: 8rpx solid #ff0;
+      color: #ff0;
+      font-weight: bold;
+      border-radius: 15rpx;
+    }
+  }
+
+}
+
+.user_container {
+  position: relative;
+
+  .user_main {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    top: -60rpx;
+
+    .history_wrap {
+      display: flex;
+      background-color: #fff;
+
+      navigator {
+        border: 3rpx solid var(--themeColor);
+        border-radius: 15rpx;
+        margin: 10rpx 15rpx;
+        flex: 1;
+        text-align: center;
+        padding: 10rpx 0;
+
+        .his_num {
+          color: var(--themeColor);
+        }
+
+      }
+    }
+
+    .order_wrap {
+      margin-top: 30rpx;
+      background-color: #fff;
+
+      .order_title {
+        font-size: 35rpx;
+        padding: 20rpx;
+        border-bottom: 6rpx solid #eee;
+      }
+
+      .order_content {
+        display: flex;
+
+        navigator {
+          padding: 15rpx;
+          flex: 1;
+          text-align: center;
+
+          .iconfont {
+            color: var(--themeColor);
+            font-size: 55rpx;
+          }
+        }
+      }
+    }
+
+    .address_wrap {
+      background-color: #fff;
+      margin-top: 30rpx;
+      padding: 15rpx;
+
+      navigator {
+        display: flex;
+      }
+    }
+
+    .other_wrap {
+      background-color: #fff;
+      margin-top: 20rpx;
+
+      .other_content {
+        display: flex;
+        padding: 15rpx;
+        border-bottom: 3px solid #eee;
+        justify-content: space-between;
+
+        .kefu {
+          display: flex;
+        }
+
+        .yijian {
+          display: flex;
+        }
+
+        .about {
+          display: flex;
+        }
+      }
+    }
+
+    .false {
+      background-color: #fff;
+      margin-top: 40rpx;
+      padding: 15rpx;
+
+      .false_content {
+        display: flex;
+      }
+    }
+  }
+}
+
+page {
+  background-color: #eee;
+}
+
+.iconfont {
+  color: var(--themeColor);
+  font-size: 40rpx;
+  margin-right: 10rpx;
+}

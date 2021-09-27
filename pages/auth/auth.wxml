@@ -1,0 +1,6 @@
+<view class="auth_container">
+  <button bindtap="getUserInfo" type="primary" plain class="authBtn">
+    授权
+  </button>
+
+</view>

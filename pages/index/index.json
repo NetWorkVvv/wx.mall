@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search-input":"../../components/searchInput/searchInput"
+  },
+  "navigationBarTitleText": "MINI首页"
+}

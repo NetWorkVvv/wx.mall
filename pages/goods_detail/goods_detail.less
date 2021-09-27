@@ -1,0 +1,115 @@
+.goods_detail {
+  .detail_swiper {
+    swiper {
+      width: 100vw;
+      height: calc(75vw * 400 / 400);
+
+      image {
+        width: 100%;
+      }
+    }
+  }
+
+  .goods_price {
+    padding: 15rpx 20rpx;
+    font-size: 35rpx;
+    font-weight: 600;
+    color: var(--themeColor);
+  }
+
+  .goods_name_row {
+    display: flex;
+    border-bottom: 16rpx solid #dedede;
+    padding: 0 0 20rpx 0;
+
+    .goods_name {
+      flex: 5;
+      padding: 0 10rpx;
+
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    .goods_collect {
+      flex: 1;
+      border-left: 2rpx solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .goods_info {
+    .goods_info_title {
+      font-size: 35rpx;
+      color: var(--themeColor);
+      font-weight: 600;
+      padding: 20rpx;
+      border-bottom: 16rpx solid #dedede;
+
+    }
+
+  }
+
+  .btm_tool {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90rpx;
+    background-color: #fff;
+    display: flex;
+    border-top: 1px solid #ccc;
+
+    .tool_item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 24rpx;
+
+      button {
+        background-color: red;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+      }
+    }
+
+    .btn_cart {
+      flex: 2;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #ffa500;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .btn_buy {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+      background-color: var(--themeColor);
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}
+
+// 因为绝对定位 挡住了一部分内容 所以需要把整体内容撑起来
+page {
+  padding-bottom: 90rpx;
+}

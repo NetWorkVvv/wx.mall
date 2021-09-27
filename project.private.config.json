@@ -1,0 +1,78 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/cart/cart",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/goods_detail/goods_detail",
+          "pathName": "pages/goods_detail/goods_detail",
+          "query": "goods_id=57441",
+          "scene": null
+        },
+        {
+          "name": "pages/addressList/addressList",
+          "pathName": "pages/addressList/addressList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pay/pay",
+          "pathName": "pages/pay/pay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/auth/auth",
+          "pathName": "pages/auth/auth",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/user",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/order",
+          "pathName": "pages/order/order",
+          "query": "type=1",
+          "scene": null
+        },
+        {
+          "name": "pages/collect/collect",
+          "pathName": "pages/collect/collect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

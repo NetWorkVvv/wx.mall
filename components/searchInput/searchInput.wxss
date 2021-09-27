@@ -1,0 +1,21 @@
+.search_container {
+  height: 90rpx;
+  padding: 10rpx;
+  background-color: var(--themeColor);
+}
+
+.search_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25rpx;
+  height: 100%;
+  color: #808080;
+}
+
+.search_content_image {
+  height: 36rpx;
+  width: 34rpx;
+  margin: 0 10rpx;
+}

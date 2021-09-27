@@ -1,0 +1,10 @@
+.auth_container {
+  padding-top:55%;
+  height: 100vh;
+}
+
+.authBtn {
+  width: 70%;
+
+  font-weight: bold;
+}
